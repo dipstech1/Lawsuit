@@ -1,0 +1,17 @@
+<div class="field is-horizontal">
+    <div class="field-body">
+        @for (item of formStructure; track item?.name) {
+        @if(item?.type == 'text' || item?.type == 'email' || item?.type == 'password'){
+        <div class="field">
+            <label class="label">{{item?.label}}</label>
+            <p class="control is-expanded has-icons-right">
+                <input class="input" type={{item?.type}} placeholder={{item?.label}}>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                </span>
+            </p>
+        </div>
+        }
+        }
+    </div>
+</div>

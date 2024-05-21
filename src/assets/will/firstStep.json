@@ -1,0 +1,127 @@
+{
+  "steps": [
+    {
+      "stepNo": 0,
+      "stepLabel": "Martial Status",
+      "data": [
+        {
+          "name": "martialStatus",
+          "heading": "What is your marital status?",
+          "value": "",
+          "type": "radio",
+          "validators": [],
+          "options": [
+            { "label": "Single", "value": "Single" },
+            { "label": "Marrried", "value": "Marrried" }
+          ]
+        }
+      ]
+    },
+    {
+      "stepNo": 1,
+      "stepLabel": "Your Details",
+      "data": [
+        {
+          "name": "fullName",
+          "label": "Full Name",
+          "value": "",
+          "type": "text"
+        },
+        {
+          "name": "city",
+          "label": "City/town",
+          "value": "",
+          "type": "text"
+        },
+        {
+          "name": "state",
+          "label": "State",
+          "value": "",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "South Wales",
+              "value": "southwales"
+            },
+            {
+              "label": "QueensLand",
+              "value": "queensland"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "stepLabel": "Executor/Personal Representative",
+      "data": [
+        {
+          "name": "fullName",
+          "label": "Full Name",
+          "value": "",
+          "type": "text"
+        },
+        {
+          "name": "city",
+          "label": "City/town",
+          "value": "",
+          "type": "text"
+        },
+        {
+          "name": "state",
+          "label": "State",
+          "value": "",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "South Wales",
+              "value": "southwales"
+            },
+            {
+              "label": "QueensLand",
+              "value": "queensland"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stepNo":3,
+      "stepLabel": "Children",
+      "data": [
+        {
+          "name": "children",
+          "label": "",
+          "heading": "Do you have children?",
+          "value": true,
+          "type": "radio",
+          "validators": [],
+          "options": [
+            { "label": "Yes", "value": "Yes" },
+            { "label": "No", "value": "No" }
+          ]
+        },
+        {
+          "name": "childName",
+          "label": "Child Name",
+          "value": "",
+          "type": "text"
+        },
+        {
+          "name": "minor",
+          "label": "",
+          "heading": "Is this child a minor or a dependant?",
+          "value": "",
+          "type": "radio",
+          "validators": [],
+          "options": [
+            { "label": "Yes", "value": "Yes" },
+            { "label": "No", "value": "No" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+

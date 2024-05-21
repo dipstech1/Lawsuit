@@ -1,0 +1,32 @@
+{
+    "data":[
+        {
+            "name": "field3",
+            "label": "Field 3",
+            "value": "",
+            "type": "dropdown",
+            "validators": {
+              "required": true
+            },
+            "options": [
+              {
+                "label": "Label 1",
+                "value": "label1"
+              },
+              {
+                "label": "Label 2",
+                "value": "label2"
+              }
+            ]
+          },
+          {
+            "name": "field5",
+            "label": "Comment",
+            "value": "",
+            "type": "textArea",
+            "validators": {
+              "required": false
+            }
+          }
+    ]
+}

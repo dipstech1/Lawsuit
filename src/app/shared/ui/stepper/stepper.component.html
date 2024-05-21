@@ -1,0 +1,33 @@
+<section class="container">
+    <!-- The navbar for the wizard -->
+    <header class="header">
+      <ol>
+        @for (step of steps; track $index) {
+            <ng-container >
+                <li [ngClass]="(selectedIndex === $index) ? activeClass : ''">
+                  <a (click)="selectedIndex = $index">
+                    @if (step.stepLabel) {
+                        <ng-container [ngTemplateOutlet]="step.stepLabel.template">
+                        </ng-container>
+                    }
+                    @else {
+                        <ng-template #showLabelText>
+                            {{ step.label }}
+                          </ng-template>
+                    }
+                   
+                   
+                  </a>
+                </li>
+              </ng-container>
+        }
+        
+      </ol>
+    </header>
+  
+    <div class="body">
+        @if (selected) {
+            <ng-container [ngTemplateOutlet]="selected.content"></ng-container>
+        }
+    </div>
+  </section>

@@ -1,0 +1,36 @@
+<!-- <app-stepper linear>
+  <cdk-step  label="Biodata">
+    <p>Content for "Step 1" - Biodata</p>
+  </cdk-step>
+  <cdk-step label="Picture">
+    <p>Content of "Step 2" - Take a picture</p>
+  </cdk-step>
+  <cdk-step label="Picture 2">
+    <p>Content of "Step 2" - Take a picture</p>
+  </cdk-step>
+  <cdk-step label="Picture 3">
+    <p>Content of "Step 2" - Take a picture</p>
+  </cdk-step>
+</app-stepper> -->
+
+<div class="section has-background-light">
+  <div class="container">
+    <!-- toggle controls here -->
+    <div class="buttons">
+      <button (click)="isEditable = !isEditable" class="button is-primary">
+        {{ isEditable ? "Disable edit mode" : "Enable edit mode" }}
+      </button>
+      <button (click)="isLinear = !isLinear" class="button is-primary">
+        {{ isLinear ? "Disable linear mode" : "Enable linear mode" }}
+      </button>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <h2 class="title is-4"> Questions </h2>
+    @if (formResponse.length && formResponse.length) {
+     <app-question-form [isEditable]="isEditable" [isLinear]="isLinear" [formStepper]="frmStepperList" [result]="formResponse"></app-question-form>
+    }
+  </div>
+</div>

@@ -1,0 +1,89 @@
+{
+  "steps": [
+    {
+      "stepNo": 0,
+      "stepLabel": "Basic Information",
+      "data": [
+        {
+          "name": "firstName",
+          "label": "First Name",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "lastName",
+          "label": "lastName",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "value": "",
+          "type": "email",
+          "validators": {
+            "required": true
+          }
+        }
+      ]
+    },
+    {
+      "stepNo": 1,
+      "stepLabel": "Other Information",
+      "data": [
+        {
+          "name": "zxc",
+          "label": "First Name",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "sdf",
+          "label": "lastName",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "field3",
+          "label": "Field 3",
+          "value": "",
+          "type": "dropdown",
+          "validators": {
+            "required": true
+          },
+          "options": [
+            {
+              "label": "Label 1",
+              "value": "label1"
+            },
+            {
+              "label": "Label 2",
+              "value": "label2"
+            }
+          ]
+        },
+        {
+          "name": "field5",
+          "label": "Comment",
+          "value": "",
+          "type": "textArea",
+          "validators": {
+            "required": false
+          }
+        }
+      ]
+    }
+  ]
+}
